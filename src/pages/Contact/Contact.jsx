@@ -1,10 +1,11 @@
 import Banner from "../../components/Ui/Banner"
 
-export default function Home() {
+
+
+export default function Contact() {
   return (
     <>
     <Banner></Banner>
-    
     </>
   )
 }

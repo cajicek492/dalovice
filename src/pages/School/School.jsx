@@ -1,10 +1,9 @@
 import Banner from "../../components/Ui/Banner"
 
-export default function Home() {
+export default function School() {
   return (
     <>
     <Banner></Banner>
-    
     </>
   )
 }
