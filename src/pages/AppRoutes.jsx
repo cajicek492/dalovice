@@ -14,6 +14,7 @@ export default function AppRoutes() {
             <Route path="/school" element={<School/>}/>
         </Routes>
       </BrowserRouter>
+      
     </>
   )
 }
