@@ -1,17 +1,50 @@
-import { Link } from "react-router-dom"
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-export default function Banner() {
+const Banner = () => {
   return (
-   <>
-   <section className="bg-gray-100 p-5 grid gap-4 grid-cols-7 border-b border-black-600">
-    <h1 className="col-span-3 p-3 text-xl">Obec Dalovice</h1>
-  <Link to={"/"}><div className="p-3 hover:bg-green-200 text-center ">Domu</div></Link>
-  <Link to={"/news"}><div className="p-3 hover:bg-green-200 text-center">Zpravy</div></Link>
-  <Link to={"/school"}><div className="p-3 hover:bg-green-200 text-center">Skola</div></Link>
-  <Link to={"/contact"}><div className="p-3 hover:bg-green-200 text-center">Kontakt</div></Link>
-   </section>
-   <p></p>
-   </>
-   
-  )
-}
+    <header className="bg-gray-900 text-gray-200 shadow-md">
+      <div className="container mx-auto flex justify-between items-center p-4">
+        <div>
+          <span className="text-2xl font-bold">Obec Dalovice</span>
+        </div>
+        <nav className="flex space-x-4">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-green-500" : "hover:text-gray-500"
+            }
+          >
+            Úvod
+          </NavLink>
+          <NavLink
+            to="/news"
+            className={({ isActive }) =>
+              isActive ? "text-green-500" : "hover:text-gray-500"
+            }
+          >
+            Zprávy
+          </NavLink>
+          <NavLink
+            to="/school"
+            className={({ isActive }) =>
+              isActive ? "text-green-500" : "hover:text-gray-500"
+            }
+          >
+            Škola
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "text-green-500" : "hover:text-gray-500"
+            }
+          >
+            Kontakt
+          </NavLink>
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+export default Banner;

@@ -1,34 +1,26 @@
+import React from "react";
+
 export default function Footer() {
   return (
-    <>
-      <section className="bg-gray-100 p-3 grid gap-4 grid-cols-3 border-b border-black-600">
-        <div className="text-center text-base sm:text-sm md:text-lg">
-          Starostka: Eliška Hlaváčová
+    <footer className="bg-gray-900 text-gray-200 py-12 px-4 md:px-8">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="text-center">
+          <h2 className="text-lg font-semibold mb-2">Starostka</h2>
+          <p>Eliška Hlaváčová</p>
         </div>
-        <div className="text-center text-base sm:text-sm md:text-lg">
-          Adresa Obecního úřadu: Dalovice 94 293 01 MB
+        <div className="text-center">
+          <h2 className="text-lg font-semibold mb-2">Adresa Obecního úřadu</h2>
+          <p>Dalovice 94 293 01 MB</p>
         </div>
-        <div className="row-span-3 text-center">
-          {" "}
-          <img src={"./src/img/mapau.png"} alt="My Image" />
+        <div className="text-center">
+          <h2 className="text-lg font-semibold mb-2">Kontakt</h2>
+          <p>Telefon: +420 326 723 370</p>
+          <p>E-mail: urad@obecdalovice.cz</p>
         </div>
-        <div className="text-center text-base sm:text-sm md:text-lg">
-          Místostarostka: Věra Sehnalová
-        </div>
-        <div className="text-center text-base sm:text-sm md:text-lg">
-          Telefon: +420 326 723 370
-        </div>
-        <div className="text-center text-base sm:text-sm md:text-lg">
-          Úřední hodiny: Po: 16:00 – 17:30 hod.
-        </div>
-        <div className="text-center text-base sm:text-sm md:text-lg">
-          E-mail: urad@obecdalovice.cz
-        </div>
-        <div className="text-center col-span-3 divide-y divide-dashed text-base sm:text-sm md:text-lg">
-          Oficiální internetové stránky obce Dalovice | vytvořily: Filip Hubler
-          a Filip Mašek
-        </div>
-      </section>
-    </>
+      </div>
+      <div className="text-center mt-8">
+        <p className="text-sm">Oficiální internetové stránky obce Dalovice | vytvořily: Filip Hubler a Filip Mašek</p>
+      </div>
+    </footer>
   );
 }
