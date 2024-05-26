@@ -1,6 +1,6 @@
 import Banner from "../../components/Ui/Banner";
 import Footer from "../../components/Ui/Footer";
-
+import "./Home.css"
 import React, { useEffect } from 'react';
 
 
