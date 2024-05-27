@@ -14,7 +14,7 @@ export default function Home() {
       <Banner></Banner>
       <section className="p-2 grid gap-4 ">
    <div className="rounded-img-container flex justify-center">
-    <img
+    <img className="mainImg"
      src="https://obecdalovice.cz/wp-content/uploads/2022/08/dji-0466-scaled.jpg" 
      alt=""
      />
