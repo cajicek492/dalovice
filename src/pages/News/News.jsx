@@ -1,8 +1,12 @@
 import Banner from "../../components/Ui/Banner"
 import Footer from "../../components/Ui/Footer"
 import Card from "../../components/Ui/Card";
+import React, { useEffect } from 'react';
 
 export default function News() {
+  useEffect(() => {
+    document.title = "Zprávy";
+  }, []);
   return (
     <>
     <Banner></Banner>
