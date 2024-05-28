@@ -19,6 +19,7 @@ const ContactInfoBox = () => {
         <p>Identifikátor datové schránky: d7jbx5m</p>
         <p>IČ: 00508896</p>
       </div>
+      <br></br>
       <img
         src="https://obecdalovice.cz/wp-content/uploads/2022/08/dji-0454-scaled.jpg"
         alt="School"

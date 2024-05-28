@@ -19,6 +19,7 @@ const SchoolInfoBox = () => {
         <p>Tel.: 326 331 329 (Škola), 723 478 736 (Školní družina), 326 325 196 (Školní jídelna)</p>
         <p>E-mail: info@zsdalovice.cz</p>
       </div>
+      <br></br>
       <img src="https://obecdalovice.cz/wp-content/uploads/2022/10/900x600-141564-188-skola.jpg" alt="School" className="w-full h-auto rounded-lg mb-4" />
     </div>
   );
