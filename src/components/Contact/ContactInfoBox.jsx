@@ -1,28 +1,39 @@
 import React from "react";
 
-const ContactInfoBox = () => {
+const ContactInfoBox = ({
+  heading,
+  mayor,
+  deputyMayor,
+  officeHours,
+  address,
+  manager,
+  phone,
+  email,
+  dataBoxId,
+  ico,
+  imageSrc,
+  imageAlt
+}) => {
   return (
     <div className="bg-gray-900 text-gray-200 p-6 border border-gray-700 rounded-lg shadow-lg mt-8 mb-12 mx-4 md:mx-auto md:max-w-4xl">
       <div className="text-center mb-4">
-        <h2 className="text-lg font-semibold">
-          Kontaktní informace – Obecní úřad
-        </h2>
-        <p>Starosta: Eliška Hlaváčová</p>
-        <p>Místostarostka: Věra Sehnalová</p>
-        <p>Úřední hodiny: Pondělí: 16:00 – 17:30 hod.</p>
-        <p>Adresa: Obecní úřad Dalovice Dalovice 94 293 01 Mladá Boleslav 1</p>
-        <p>Eliška Wágnerová – hospodářka</p>
+        <h2 className="text-lg font-semibold">{heading}</h2>
+        <p>{mayor}</p>
+        <p>{deputyMayor}</p>
+        <p>{officeHours}</p>
+        <p>{address}</p>
+        <p>{manager}</p>
       </div>
       <div className="text-center">
-        <p>Telefon: +420 326 723 370</p>
-        <p>E-mail: urad@obecdalovice.cz</p>
-        <p>Identifikátor datové schránky: d7jbx5m</p>
-        <p>IČ: 00508896</p>
+        <p>{phone}</p>
+        <p>{email}</p>
+        <p>{dataBoxId}</p>
+        <p>{ico}</p>
       </div>
-      <br></br>
+      <br />
       <img
-        src="https://obecdalovice.cz/wp-content/uploads/2022/08/dji-0454-scaled.jpg"
-        alt="School"
+        src={imageSrc}
+        alt={imageAlt}
         className="w-full h-auto rounded-lg mb-4"
       />
     </div>
