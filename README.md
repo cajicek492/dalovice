@@ -1,3 +1,2 @@
 # Obec Dalovice - Skolni projekt
--Filip Hubler
--Filip Masek
+-Filip Hubler | Filip Masek
