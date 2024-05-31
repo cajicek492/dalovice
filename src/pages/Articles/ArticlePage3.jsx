@@ -3,13 +3,15 @@ import Footer from "../../components/Ui/Footer";
 import Article from "../../components/News/Article";
 export default function ArticlePage3() {
   const articleData = {
-    title: 'Sample Article Title',
-    subtitle: 'This is the subtitle of the article',
+    title: 'Zákaz pálení ve Středočeském kraji',
+    subtitle: '',
     paragraphs: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
-      'Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.',
-      'Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      'Český hydrometeorologický ústav vydal dne 29. 4. 2024 výstrahu č. 000151 před nebezpečím vzniku požárů na území Středočeského kraje, platnou od 30. 4. 2024 0:00 hodin do 1. 5. 2024 24:00 hodin. ',
+      'V souvislosti s ustanovením Čl. 1 odst. a) Nařízení Středočeského kraje č. 3/2020 ze dne 20. 4. 2020 o stanovení podmínek k zabezpečení požární ochrany v době zvýšeného nebezpečí vzniku požáru (dále jen "Nařízení") vstupují v účinnost stanovená opatření a zákazy vyplývající z Nařízení.',
+      'V souladu s Nařízením je proto celoplošně',
     ],
+    publishedDate: "29.04.2024 ",
+    author: "Obecní úřad Dalovice",
     imageSrc: '',
     imageAlt: 'Sample image',
   };
@@ -20,6 +22,8 @@ export default function ArticlePage3() {
     <Article
           title={articleData.title}
           subtitle={articleData.subtitle}
+          publishedDate={articleData.publishedDate}
+          author = {articleData.author}
           paragraphs={articleData.paragraphs}
           imageSrc={articleData.imageSrc}
           imageAlt={articleData.imageAlt}

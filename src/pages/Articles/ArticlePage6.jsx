@@ -3,29 +3,41 @@ import Footer from "../../components/Ui/Footer";
 import Article from "../../components/News/Article";
 export default function ArticlePage6() {
   const articleData = {
-    title: 'Sample Article Title',
-    subtitle: 'This is the subtitle of the article',
+    title: "Informace spolku Pomáháme srnčatům",
+    subtitle: "",
     paragraphs: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
-      'Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.',
-      'Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      "Informace pro občany, kteří by se chtěli podílet na činnosti spolku Pomáháme srnčatům:",
+      "SPOLEK POMÁHÁME SRNČATŮM",
+      "Hřivno 67, 294 79 Chotětov",
+      "e-mail: pomahamesrncatum@seznam.cz",
+      "tel: 607 068 166, 724 806 327",
+      "– Facebooková skupina: Vyhánění srnčat- senoseč. Mladoboleslavsko – na této stránce sdružujeme dobrovolníky a sdílíme aktuality. Ke skupině se může přidat každý.",
+      "– Email: pomahamesrncatum@seznam.cz",
+      "– Adresa: SPOLEK POMÁHÁME SRNČATŮM, Hřivno 67",
+      "– Tel: Barbora Hájková 607 068 166, Lucie Novotná 724 806 327",
+      "Více informací o občanských aktivitách také na: www.stopsecenisrncat.cz, Facebooková skupina: „Stop sečení srnčat“ Instagram: #stopsecenisrncat",
     ],
-    imageSrc: '',
-    imageAlt: 'Sample image',
+    publishedDate: "03.04.2024 ",
+    author: "Obecní úřad Dalovice",
+    imageSrc:
+      "https://obecdalovice.cz/wp-content/uploads/2024/04/letak-a4-se-spadavkami-pro-tisk-mladeboleslavsko-292x400.jpg",
+    imageAlt: "Sample image",
   };
   return (
     <>
-    <Banner/>
-    <br/>
-    <Article
-          title={articleData.title}
-          subtitle={articleData.subtitle}
-          paragraphs={articleData.paragraphs}
-          imageSrc={articleData.imageSrc}
-          imageAlt={articleData.imageAlt}
-        />
-        <br/>
-    <Footer/>
+      <Banner />
+      <br />
+      <Article
+        title={articleData.title}
+        subtitle={articleData.subtitle}
+        publishedDate={articleData.publishedDate}
+        author={articleData.author}
+        paragraphs={articleData.paragraphs}
+        imageSrc={articleData.imageSrc}
+        imageAlt={articleData.imageAlt}
+      />
+      <br />
+      <Footer />
     </>
-  )
+  );
 }

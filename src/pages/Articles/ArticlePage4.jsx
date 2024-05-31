@@ -3,13 +3,15 @@ import Footer from "../../components/Ui/Footer";
 import Article from "../../components/News/Article";
 export default function ArticlePage4() {
   const articleData = {
-    title: 'Sample Article Title',
-    subtitle: 'This is the subtitle of the article',
+    title: 'Připomínkování jízdních řádů',
+    subtitle: '',
     paragraphs: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
-      'Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.',
-      'Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      'Návrhy jízdních řádů PID platných od 1.12.2024 najdete na novém webu “AUTOBUSY 2024”- www.autobusy2024.idsk.cz.',
+      'Připomínky můžete předložit do 20.4.2024 na OÚ Dalovice.',
+      
     ],
+    publishedDate: "17.04.2024 ",
+    author: "Obecní úřad Dalovice",
     imageSrc: '',
     imageAlt: 'Sample image',
   };
@@ -20,6 +22,8 @@ export default function ArticlePage4() {
     <Article
           title={articleData.title}
           subtitle={articleData.subtitle}
+          publishedDate={articleData.publishedDate}
+          author = {articleData.author}
           paragraphs={articleData.paragraphs}
           imageSrc={articleData.imageSrc}
           imageAlt={articleData.imageAlt}

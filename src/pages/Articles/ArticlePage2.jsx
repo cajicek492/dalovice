@@ -3,14 +3,15 @@ import Footer from "../../components/Ui/Footer";
 import Article from "../../components/News/Article";
 export default function ArticlePage2() {
   const articleData = {
-    title: 'Sample Article Title',
-    subtitle: 'This is the subtitle of the article',
+    title: 'Kolo pro život 11.5.2024',
+    subtitle: '',
     paragraphs: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
-      'Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.',
-      'Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      'V sobotu 11.5.2024 se uskuteční cyklistické závody KOLO PRO ŽIVOT.',
+      'Trasa závodu prochází i přes naší obec. Motoristé, dbejte proto pokynů pořadatelů závodu'
     ],
-    imageSrc: '',
+    publishedDate: "07.05.2024 ",
+    author: "Obecní úřad Dalovice",
+    imageSrc: 'https://www.kolopro.cz/assets/images/fb-sharing2.png',
     imageAlt: 'Sample image',
   };
   return (
@@ -20,6 +21,8 @@ export default function ArticlePage2() {
     <Article
           title={articleData.title}
           subtitle={articleData.subtitle}
+          publishedDate={articleData.publishedDate}
+          author = {articleData.author}
           paragraphs={articleData.paragraphs}
           imageSrc={articleData.imageSrc}
           imageAlt={articleData.imageAlt}
