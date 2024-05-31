@@ -2,6 +2,7 @@ import Banner from "../../components/Ui/Banner";
 import Footer from "../../components/Ui/Footer";
 import "./Home.css"
 import React, { useEffect } from 'react';
+import Add from "../../components/Home/Add";
 
 
 export default function Home() {
@@ -22,12 +23,8 @@ export default function Home() {
         </div>
       </main>
       <div className="container mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div className="p-4 bg-gray-900 border border-gray-700 rounded-lg shadow-lg max-w-sm mx-auto">
-        <img src="https://ovm.bezstavy.cz/v1/gAi1wtzxC9btQBpSIBAdjAG7oTcU2Q/b/250" alt="Description of first image" className="w-full rounded-lg mb-4"/>
-      </div>
-      <div className="p-4 bg-gray-900 border border-gray-700 rounded-lg shadow-lg max-w-sm mx-auto">
-        <img src="https://obecdalovice.cz/wp-content/uploads/2023/12/mr-light-250x250-1.png" alt="Description of second image" className="w-full rounded-lg mb-4"/>
-      </div>
+     <Add link = "https://ovm.bezstavy.cz/v1/gAi1wtzxC9btQBpSIBAdjAG7oTcU2Q/b/250"></Add>
+     <Add link = "https://obecdalovice.cz/wp-content/uploads/2023/12/mr-light-250x250-1.png"></Add>
     </div>
     <br></br>
       <Footer></Footer>
