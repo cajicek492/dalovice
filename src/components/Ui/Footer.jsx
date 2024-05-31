@@ -1,6 +1,7 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-200 py-12 px-4 md:px-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -19,8 +20,44 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center mt-8">
-        <p className="text-sm">Oficiální internetové stránky obce Dalovice | vytvořily: Filip Hubler a Filip Mašek</p>
+        <nav className="flex justify-center space-x-4">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-green-500" : "hover:text-gray-500"
+            }
+          >
+            Úvod
+          </NavLink>
+          <NavLink
+            to="/news"
+            className={({ isActive }) =>
+              isActive ? "text-green-500" : "hover:text-gray-500"
+            }
+          >
+            Zprávy
+          </NavLink>
+          <NavLink
+            to="/school"
+            className={({ isActive }) =>
+              isActive ? "text-green-500" : "hover:text-gray-500"
+            }
+          >
+            Škola
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "text-green-500" : "hover:text-gray-500"
+            }
+          >
+            Kontakt
+          </NavLink>
+        </nav>
+        <p className="text-sm mt-2">Oficiální internetové stránky obce Dalovice | vytvořily: Filip Hubler a Filip Mašek</p>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;
