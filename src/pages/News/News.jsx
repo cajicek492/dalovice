@@ -8,62 +8,64 @@ export default function News() {
   useEffect(() => {
     document.title = "Zprávy";
   }, []);
+
+  const cardData = [
+    {
+      image: "https://via.placeholder.com/150",
+      title: "Sample Card 1",
+      description: "This is a sample description for the card component.",
+      buttonText: "Click Me",
+    },
+    {
+      image: "https://via.placeholder.com/150",
+      title: "Sample Card",
+      description: "This is a sample description for the card component.",
+      buttonText: "Click Me",
+    },
+    {
+      image: "https://via.placeholder.com/150",
+      title: "Sample Card 3",
+      description: "This is a sample description for the card component.",
+      buttonText: "Click Me",
+    },
+    {
+      image: "https://via.placeholder.com/150",
+      title: "Sample Card",
+      description: "This is a sample description for the card component.",
+      buttonText: "Click Me",
+    },
+    {
+      image: "https://via.placeholder.com/150",
+      title: "Sample Card",
+      description: "This is a sample description for the card component.",
+      buttonText: "Click Me",
+    },
+    {
+      image: "https://via.placeholder.com/150",
+      title: "Sample Card",
+      description: "This is a sample description for the card component.",
+      buttonText: "Click Me",
+    },
+  ];
+
   return (
     <>
-      <Banner></Banner>
-      <br></br>
+      <Banner />
+      <br />
       <CardSpace>
-        <div className="flex justify-center">
-          <Card
-            image="https://via.placeholder.com/150"
-            title="Sample Card"
-            description="This is a sample description for the card component."
-            buttonText="Click Me"
-          />
-        </div>
-        <div className="flex justify-center">
-          <Card
-            image="https://via.placeholder.com/150"
-            title="Sample Card"
-            description="This is a sample description for the card component."
-            buttonText="Click Me"
-          />
-        </div>
-        <div className="flex justify-center">
-          <Card
-            image="https://via.placeholder.com/150"
-            title="Sample Card"
-            description="This is a sample description for the card component."
-            buttonText="Click Me"
-          />
-        </div>
-        <div className="flex justify-center">
-          <Card
-            image="https://via.placeholder.com/150"
-            title="Sample Card"
-            description="This is a sample description for the card component."
-            buttonText="Click Me"
-          />
-        </div>
-        <div className="flex justify-center">
-          <Card
-            image="https://via.placeholder.com/150"
-            title="Sample Card"
-            description="This is a sample description for the card component."
-            buttonText="Click Me"
-          />
-        </div>
-        <div className="flex justify-center">
-          <Card
-            image="https://via.placeholder.com/150"
-            title="Sample Card"
-            description="This is a sample description for the card component."
-            buttonText="Click Me"
-          />
-        </div>
+        {cardData.map((card, index) => (
+          <div key={index} className="flex justify-center">
+            <Card
+              image={card.image}
+              title={card.title}
+              description={card.description}
+              buttonText={card.buttonText}
+            />
+          </div>
+        ))}
       </CardSpace>
-      <br></br>
-      <Footer></Footer>
+      <br />
+      <Footer />
     </>
   );
 }
