@@ -17,7 +17,7 @@ const ContactInfoBox = ({
   return (
     <div className="bg-gray-900 text-gray-200 p-6 border border-gray-700 rounded-lg shadow-lg mt-8 mb-12 mx-4 md:mx-auto md:max-w-4xl">
       <div className="text-center mb-4">
-        <h2 className="text-lg font-semibold">{heading}</h2>
+        <h2 className="text-2xl font-semibold">{heading}</h2>
         <p>{mayor}</p>
         <p>{deputyMayor}</p>
         <p>{officeHours}</p>

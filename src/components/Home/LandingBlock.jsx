@@ -1,6 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 export default function LandingBlock(props) {
+  const navigate = useNavigate(); // Initialize useNavigate hook
+
+  const handleClick = () => {
+    if (props.link) {
+      navigate(props.link); // Use navigate function to navigate to the specified link
+    }
+  };
+
   return (
     <>
       <main className="bg-gray-800 text-gray-200 p-6 flex flex-col md:flex-row items-center justify-center">
@@ -16,6 +25,12 @@ export default function LandingBlock(props) {
           <p className="mb-6">
             {props.p}
           </p>
+          <button
+            onClick={handleClick}
+            className="bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-400"
+          >
+            {props.buttonText}
+          </button>
         </div>
       </main>
     </>

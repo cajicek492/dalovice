@@ -9,6 +9,7 @@ import ArticlePage3 from "./Articles/ArticlePage3";
 import ArticlePage4 from "./Articles/ArticlePage4";
 import ArticlePage5 from "./Articles/ArticlePage5";
 import ArticlePage6 from "./Articles/ArticlePage6";
+import About from "./About/About";
 export default function AppRoutes() {
   return (
     <>
@@ -18,6 +19,7 @@ export default function AppRoutes() {
             <Route path="/news" element={<News/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/school" element={<School/>}/>
+            <Route path="/about" element={<About/>}/>
             <Route path="/news/article" element={<ArticlePage/>}/>
             <Route path="/news/article2" element={<ArticlePage2/>}/>
             <Route path="/news/article3" element={<ArticlePage3/>}/>

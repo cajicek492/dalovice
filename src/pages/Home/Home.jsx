@@ -17,7 +17,9 @@ export default function Home() {
 
       <LandingBlock
         h2="Vítejte v obci Dalovice"
-        p="Obec Dalovice je krásná vesnice nacházející se v srdci České republiky. Prozkoumejte náš web a dozvíte se více o naší komunitě, službách a novinkách."
+        p="Obec Dalovice je krásná vesnice nacházející se v srdci České republiky. Prozkoumejte náš web a dozvíte se více o naší komunitě a novinkách."
+        buttonText="Informace o obci"
+        link = "/about"
       />
 
       <AddSpace>
