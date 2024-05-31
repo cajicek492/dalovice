@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function LandingBlock(props) {
   return (
@@ -8,7 +8,7 @@ export default function LandingBlock(props) {
           <img
             src="https://obecdalovice.cz/wp-content/uploads/2022/08/dji-0466-scaled.jpg"
             alt="Obec Dalovice"
-            className="mx-auto rounded-lg shadow-lg mb-6 w-2/3 md:w-full"
+            className="mx-auto rounded-lg shadow-lg mb-6 w-2/3 md:w-full transition-transform duration-300 transform hover:scale-105"
           />
         </div>
         <div className="container mx-auto text-center md:w-1/2 md:ml-6">
@@ -19,5 +19,5 @@ export default function LandingBlock(props) {
         </div>
       </main>
     </>
-  )
+  );
 }
