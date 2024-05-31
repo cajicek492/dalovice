@@ -1,8 +1,8 @@
+import React, { useEffect } from "react";
 import Banner from "../../components/Ui/Banner";
 import Footer from "../../components/Ui/Footer";
 import Card from "../../components/News/Card";
 import CardSpace from "../../components/News/CardSpace";
-import React, { useEffect } from "react";
 
 export default function News() {
   useEffect(() => {
@@ -15,36 +15,42 @@ export default function News() {
       title: "Sample Card 1",
       description: "This is a sample description for the card component.",
       buttonText: "Click Me",
+      link: "/news/article",
     },
     {
       image: "https://via.placeholder.com/150",
-      title: "Sample Card",
+      title: "Sample Card 2",
       description: "This is a sample description for the card component.",
       buttonText: "Click Me",
+      link: "/news/article2",
     },
     {
       image: "https://via.placeholder.com/150",
       title: "Sample Card 3",
       description: "This is a sample description for the card component.",
       buttonText: "Click Me",
+      link: "/news/article3",
     },
     {
       image: "https://via.placeholder.com/150",
-      title: "Sample Card",
+      title: "Sample Card 4",
       description: "This is a sample description for the card component.",
       buttonText: "Click Me",
+      link: "/news/article4",
     },
     {
       image: "https://via.placeholder.com/150",
-      title: "Sample Card",
+      title: "Sample Card 5",
       description: "This is a sample description for the card component.",
       buttonText: "Click Me",
+      link: "/news/article5",
     },
     {
       image: "https://via.placeholder.com/150",
-      title: "Sample Card",
+      title: "Sample Card 6",
       description: "This is a sample description for the card component.",
       buttonText: "Click Me",
+      link: "/news/article6",
     },
   ];
 
@@ -60,6 +66,7 @@ export default function News() {
               title={card.title}
               description={card.description}
               buttonText={card.buttonText}
+              link={card.link}
             />
           </div>
         ))}

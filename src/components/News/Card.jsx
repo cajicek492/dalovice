@@ -1,6 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const Card = ({ image, title, description, buttonText, onButtonClick }) => {
+const Card = ({ image, title, description, buttonText, link }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    if (link) {
+      navigate(link);
+    }
+  };
+
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-900 text-gray-200 transition duration-300 ease-in-out transform hover:scale-105">
       <img className="w-full h-48 object-cover" src={image} alt={title} />
@@ -12,7 +21,7 @@ const Card = ({ image, title, description, buttonText, onButtonClick }) => {
       </div>
       <div className="px-6 pt-4 pb-2">
         <button
-          onClick={onButtonClick}
+          onClick={handleClick}
           className="bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-400"
         >
           {buttonText}
