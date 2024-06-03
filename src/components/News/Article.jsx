@@ -1,6 +1,6 @@
-import React from 'react';
+import BackButton from "../../components/About/BackButton";
 
-const Article = ({ title, subtitle, paragraphs, publishedDate, author, imageSrc, imageAlt }) => {
+const Article = ({ title, subtitle, paragraphs, publishedDate, author, imageSrc, imageAlt, backButtonLink, backButtonText }) => {
   return (
     <div className="max-w-3xl mx-auto py-12 px-4 md:px-8 bg-gray-900 text-gray-200">
       <h1 className="text-3xl font-bold mb-4">{title}</h1>
@@ -10,6 +10,7 @@ const Article = ({ title, subtitle, paragraphs, publishedDate, author, imageSrc,
       {paragraphs.map((paragraph, index) => (
         <p key={index} className="mb-4">{paragraph}</p>
       ))}
+      <BackButton link={backButtonLink} buttonText={backButtonText} />
     </div>
   );
 };

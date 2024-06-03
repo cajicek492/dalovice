@@ -12,6 +12,8 @@ export default function ArticlePage() {
     author: "Obecní úřad Dalovice",
     imageSrc: 'https://obecdalovice.cz/wp-content/uploads/2024/05/motosraz-2024-284x400.jpeg',
     imageAlt: 'Sample image',
+    backButtonLink: "/news",
+    backButtonText: "zpět"
   };
   return (
     <>
@@ -25,6 +27,8 @@ export default function ArticlePage() {
           paragraphs={articleData.paragraphs}
           imageSrc={articleData.imageSrc}
           imageAlt={articleData.imageAlt}
+          backButtonLink={articleData.backButtonLink}
+          backButtonText={articleData.backButtonText}
         />
         <br/>
     <Footer/>

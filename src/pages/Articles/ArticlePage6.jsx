@@ -22,6 +22,8 @@ export default function ArticlePage6() {
     imageSrc:
       "https://obecdalovice.cz/wp-content/uploads/2024/04/letak-a4-se-spadavkami-pro-tisk-mladeboleslavsko-292x400.jpg",
     imageAlt: "Sample image",
+    backButtonLink: "/news",
+    backButtonText: "zpět"
   };
   return (
     <>
@@ -35,6 +37,8 @@ export default function ArticlePage6() {
         paragraphs={articleData.paragraphs}
         imageSrc={articleData.imageSrc}
         imageAlt={articleData.imageAlt}
+        backButtonLink={articleData.backButtonLink}
+          backButtonText={articleData.backButtonText}
       />
       <br />
       <Footer />

@@ -1,4 +1,4 @@
-import React from "react";
+import BackButton from "../../components/About/BackButton";
 
 const AboutInfoBox = ({
   heading,
@@ -31,6 +31,7 @@ const AboutInfoBox = ({
         alt={imageAlt}
         className="w-full h-auto rounded-lg mb-4"
       />
+       <div className="text-center"><BackButton link = "/" buttonText = "zpět"/></div>
     </div>
   );
 };

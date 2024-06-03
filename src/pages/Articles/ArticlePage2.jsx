@@ -13,6 +13,8 @@ export default function ArticlePage2() {
     author: "Obecní úřad Dalovice",
     imageSrc: 'https://www.kolopro.cz/assets/images/fb-sharing2.png',
     imageAlt: 'Sample image',
+    backButtonLink: "/news",
+    backButtonText: "zpět"
   };
   return (
     <>
@@ -26,6 +28,8 @@ export default function ArticlePage2() {
           paragraphs={articleData.paragraphs}
           imageSrc={articleData.imageSrc}
           imageAlt={articleData.imageAlt}
+          backButtonLink={articleData.backButtonLink}
+          backButtonText={articleData.backButtonText}
         />
         <br/>
     <Footer/>
