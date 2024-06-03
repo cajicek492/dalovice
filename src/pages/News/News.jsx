@@ -6,7 +6,7 @@ import CardSpace from "../../components/News/CardSpace";
 
 export default function News() {
   useEffect(() => {
-    document.title = "Zprávy";
+    document.title = "Obec Dalovice - Zprávy";
   }, []);
 
   const cardData = [

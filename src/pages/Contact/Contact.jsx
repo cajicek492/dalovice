@@ -6,7 +6,7 @@ import React, { useEffect } from 'react';
 
 export default function Contact() {
   useEffect(() => {
-    document.title = "Kontakt";
+    document.title = "Obec Dalovice - Kontakt";
   }, []);
   return (
     <>

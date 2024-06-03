@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 
 export default function School() {
   useEffect(() => {
-    document.title = "Škola";
+    document.title = "Obec Dalovice - Škola";
   }, []);
   return (
     <>

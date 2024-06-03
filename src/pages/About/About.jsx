@@ -1,8 +1,12 @@
 import Banner from "../../components/Ui/Banner";
 import Footer from "../../components/Ui/Footer";
 import AboutInfoBox from "../../components/About/AboutInfoBox";
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    document.title = "Obec Dalovice - Informace";
+  }, []);
   return (
     <>
     <Banner/>
